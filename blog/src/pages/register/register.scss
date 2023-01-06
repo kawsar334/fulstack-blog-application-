@@ -1,0 +1,51 @@
+
+
+$lightGreen:#b9e7e7;
+
+.auth{
+    width: 100vw !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: $lightGreen   ;
+    h1{
+        font-size: 20px ;
+        color: teal;
+    }
+    form{
+        width: 400px !important;
+        display: flex;
+        flex-direction: column;
+        padding: 50px ;
+        background-color: white;
+        // background-color: red;
+        width: 200px;
+        gap: 20px;
+
+        input{
+            padding: 10px ;
+            border: none;
+            border-bottom: 0.1px solid gray;
+            outline: none;
+        }
+        button{
+            padding: 10px ;
+            border: none;
+            background-color: teal;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        span{
+
+            text-align: center;
+            font-size: 13px ;
+            
+        }
+
+
+    }
+
+}

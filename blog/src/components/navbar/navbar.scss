@@ -1,0 +1,58 @@
+
+
+
+.navbar{
+    .navbarContainer{
+        padding: 10px ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      
+        .logo{
+            img{
+                width: 100px;
+                height: 40px;
+                border-radius: 5px;
+                background-color: lightseagreen;
+
+            }
+
+        }
+        .links{
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            a{
+                text-decoration: none;
+                color: #000;
+                font-weight: 500;
+                font-size: 16px;
+            }
+            span{
+                cursor: pointer;
+                font-size: 14px ;
+                font-weight: 600;
+            }
+            .write{
+                width: 50px;
+                height: 50px;
+                background-color: lightseagreen;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                border: 2px solid white;
+                transition: all 1s ease;
+                &:hover{
+                    border: 2px solid lightseagreen;
+                    background-color: white;
+
+                }
+            }
+        }
+    }
+}
+
+
