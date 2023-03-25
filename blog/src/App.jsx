@@ -16,7 +16,7 @@ import { PersistGate } from 'redux-persist/integration/react'
 import { persistStor } from './redux/store';
 import UpdateProfile from './pages/updateProfile/UpdateProfile';
 function App() {
-  const user = useSelector((state) => state.user.currentUser.user) 
+  const user = useSelector((state) => state?.user?.currentUser?.user) 
 // const user= false
 
   return (

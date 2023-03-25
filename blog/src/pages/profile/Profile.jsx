@@ -69,8 +69,8 @@ const Profile = () => {
       <div className="profile">
         <div className="profile_left">
           <h1> Profile information </h1>
-          <h1> Name:{user.username}</h1>
-          <p> Email:{user.email}</p>
+          <h1> Name:{user?.username}</h1>
+          <p> Email:{user?.email}</p>
           <div className="user_img">
           <img src={PF + user.profilePicture} alt="" />
           <button><NavLink to={`/edit/${id}`}>Edit Profile</NavLink></button>
@@ -79,11 +79,11 @@ const Profile = () => {
       </div>
         <div className="profile_right">
 
-            <h1>Post by {user.username}</h1>          
+            <h1>Post by {user?.username}</h1>          
           <div className="profile_right_container">
             {userPosts.slice(0, 4).map((post) => (
-              <NavLink to={`/post/${post._id}`} key={post._id} className="post_item">
-                <h2 className="postTitle">{post.title} </h2>
+              <NavLink to={`/post/${post?._id}`} key={post?._id} className="post_item">
+                <h2 className="postTitle">{post?.title} </h2>
                 <div className="img"><img src={PF+post.photo} alt="Loading..." /></div>
 
               </NavLink>))}

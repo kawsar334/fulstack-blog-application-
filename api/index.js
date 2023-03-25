@@ -1,6 +1,6 @@
 import express from "express";
 const app = express();
-import env from "dotenv";
+import env from "dotenv"; 
 env.config();
 const PORT = process.env.PORT; 
 import {DB} from "./db/db.js"
